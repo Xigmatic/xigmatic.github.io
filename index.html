@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<script src="script.js"></script>
-</body>
+	<head></head>
+
+	<body>
+		<canvas id="canvas" width=1000 height=500></canvas>
+		<br>
+		<label id="s1" for="stepSize">Step Size: 0.0001   </label>
+		<input type="range" step="0.0001" min="0.0001" max="1" value="0.0001" class="slider" id="stepSize" style="width: 1000px">
+		<br>
+		<label id="s2" for="force">Force: 3   </label>
+		<input type="range" step="0.1" min="-1" max="10" value="3" class="slider" id="force" style="width: 1000px">
+	</body>
+	<script src="calc.js"></script>
 </html>
